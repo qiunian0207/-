@@ -1,0 +1,14 @@
+streamlit
+langchain
+unstructured
+layoutparser
+paddleocr
+pytorch
+transformers
+opencv-python
+pillow
+pandas
+openpyxl
+python-docx
+qwen-api
+openai

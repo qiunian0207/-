@@ -64,6 +64,25 @@ cd app
 streamlit run main.py
 ```
 
+> ⚠️ **导入错误排查**
+>
+> 如果启动应用时出现类似
+> `ModuleNotFoundError: No module named 'config'`，请确认：
+>
+> 1. 目录 `doc_processing`, `config`, `app` 和 `components` 下均有
+>    `__init__.py` 文件（使其成为Python包）。
+> 2. 启动时将顶层 `doc_processing` 目录加入 `PYTHONPATH`，或者在
+>    `app/main.py` 中插入以下代码片段，以便 Python 找到 `config` 包：
+>
+> ```python
+> import os, sys
+> parent = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+> if parent not in sys.path:
+>     sys.path.insert(0, parent)
+> ```
+>
+> 这样不论你是直接运行脚本还是通过 `streamlit run`，都能正确导入配置。
+
 ## 使用方法
 
 1. 打开浏览器，访问Streamlit应用地址（默认为 http://localhost:8501）
@@ -77,8 +96,10 @@ streamlit run main.py
 - JPG/JPEG
 - PNG
 - TIFF
-- DOCX
-- XLSX
+- MD (Markdown)
+- TXT (纯文本)
+- DOCX (Word文档)
+- XLSX (Excel表格)
 
 ## 处理流程
 

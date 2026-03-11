@@ -3,7 +3,7 @@ langchain
 unstructured
 layoutparser
 paddleocr
-pytorch
+torch
 transformers
 opencv-python
 pillow

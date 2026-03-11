@@ -16,7 +16,7 @@ OUTPUT_DIR = "outputs/results"
 
 # Processing settings
 MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
-SUPPORTED_FORMATS = [".pdf", ".jpg", ".jpeg", ".png", ".tiff"]
+SUPPORTED_FORMATS = [".pdf", ".jpg", ".jpeg", ".png", ".tiff", ".md", ".txt", ".docx", ".xlsx"]
 
 # Validation rules
 VALIDATION_RULES = {

@@ -1,14 +1,16 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 
 setup(
     name="doc_processing",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        # Add actual dependencies if you want to enable pip install
+        "streamlit",
+        "pandas",
+        "openpyxl",
+        "python-docx",
+        "pypdf",
+        "pillow",
     ],
-    entry_points={
-        "console_scripts": [
-            "docproc=app.main:main"  # if main had a main() function
-        ],
 )

@@ -1,14 +1,16 @@
 streamlit
-langchain
-unstructured
-layoutparser
-paddleocr
-torch
-transformers
-opencv-python
-pillow
 pandas
 openpyxl
 python-docx
-qwen-api
-openai
+pypdf
+pillow
+matplotlib
+
+# Optional enhancement dependencies:
+# unstructured
+# layoutparser
+# paddleocr
+# pdf2image
+# torch
+# transformers
+# opencv-python
